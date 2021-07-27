@@ -25,8 +25,8 @@ use Control-C to exit the server
 ---
 ## The app (UI)
 
-To get started on the UI you will need to open another terminal and cd into the todo-app directory from the project directory.
-Once in the todo-app directory run
+To get started on the UI you will need to open another terminal and cd into the todo-client directory from the project directory.
+Once in the todo-client directory run
 
 ### npm install
 
@@ -36,7 +36,7 @@ When that is complete you can execute the tests using
 
 ### npm test
 
-Note that the server does not need to be running to execute the todo-app tests
+Note that the server does not need to be running to execute the todo-client tests
 
 When finished running the tests you can start the react app by running
 

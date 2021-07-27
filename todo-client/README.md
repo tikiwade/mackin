@@ -1,4 +1,4 @@
-# Getting Started with the todo App
+# Getting Started with the todo client
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
