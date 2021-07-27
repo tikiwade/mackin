@@ -1,0 +1,129 @@
+.todo-app {
+    max-width: 600px;
+    min-width: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 5px silver;
+    background-color: white;
+    font-size: 24px;
+}
+.todo-app .todo-input {
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid gray;
+}
+.todo-app .todo-input .complete-all-button {
+    cursor: pointer;
+    font-size: 30px;
+    opacity: .5;
+    transition: 0.3s;
+    color: black;
+    font-weight: bold;
+    margin: 14px 10px;
+    transform: rotate(180deg)
+}
+.todo-app .todo-input .complete-all-button:hover {
+    opacity: 1;
+}
+.todo-app .todo-input input {
+    border: none;
+    margin: 10px;
+    width: 100%;
+    font-size: 24px;
+}
+.todo-app .todo-input input:focus {
+    outline: none;
+}
+.todo-app .todo-input input::placeholder {
+    font-style: italic;
+    color:rgb(167, 167, 167);
+}
+.todo-app .todo-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.todo-app .todo-list ul li {
+    margin: 0;
+    padding: 14px 10px;
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.todo-app .todo-list ul li .complete-button {
+    cursor: pointer;
+    width: 20px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    opacity: .5;
+    transition: 0.3s;
+}
+.todo-app .todo-list ul li .complete-button:hover {
+    border-color: black;
+    opacity: 1;
+}
+.todo-app .todo-list ul li.completed .completeButton {
+    background-color: gray;
+}
+.todo-app .todo-list ul li .label {
+    cursor: pointer;
+    padding: 0 10px;
+    flex-grow: 1;
+    text-align:left;
+}
+.todo-app .todo-list ul li .label input {
+    border: none;
+    width: 100%;
+    font-size: 22px;
+    height: 18px;
+}
+.todo-app .todo-list ul li .label input:focus {
+    outline: none;
+}
+.todo-app .todo-list ul li.completed .label {
+    color: gray;
+    text-decoration: line-through;
+}
+.todo-app .todo-list ul li .remove-button {
+    cursor: pointer;
+    width: 16px;
+    opacity: 0;
+    color: darkred;
+    transition: 0.3s;
+}
+.todo-app .todo-list ul li:hover .remove-button {
+    opacity: 1;
+}
+.todo-app .todo-actions {
+    color: rgb(167, 167, 167);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 14px;
+}
+.todo-app .todo-actions button {
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: rgb(167, 167, 167);
+    margin: 0 2px;
+}
+.todo-app .todo-actions button.selected, .todo-app .todo-actions button:hover {
+    border-color: rgb(234,203,203);
+}
+.todo-app .todo-actions button:focus {
+    outline: none;
+}
+.todo-app .todo-actions .clear-button {
+    width: 120px;
+}
+.todo-app .todo-actions .clear-button button {
+    border: none;
+}
+.todo-app .todo-actions .clear-button button:hover {
+    text-decoration: underline;
+}
