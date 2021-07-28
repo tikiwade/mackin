@@ -127,3 +127,18 @@
 .todo-app .todo-actions .clear-button button:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 500px) {
+    .todo-app {
+        min-width: 200px;
+    }
+    .todo-app .todo-list ul li .remove-button {
+        opacity: 1;
+    }
+    .todo-app .todo-actions {
+        flex-flow: column nowrap;
+    }
+    .todo-app .todo-actions .clear-button {
+        margin: auto;
+    }
+}
